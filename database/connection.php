@@ -11,9 +11,9 @@ function connectDB(){
 function connect() {
         $host = getenv('DB_HOST', true) ?: "localhost";
         $port = getenv('DB_PORT', true) ?: 3306; 
-        $dbname = getenv('DB_NAME', true) ?: "news"; 
-        $user = getenv('DB_USERNAME', true) ?: "root"; 
-        $password = getenv('DB_PASSWORD', true) ?: ""; 
+        $dbname = getenv('DB_NAME', true) ?: "taitur25_mvc"; 
+        $user = getenv('DB_USERNAME', true) ?: "taitur25_mvc"; 
+        $password = getenv('DB_PASSWORD', true) ?: "by1N3A.HJz?=KR8@"; 
 
         $connectionString = "mysql:host=$host;dbname=$dbname;port=$port;charset=utf8";
 
