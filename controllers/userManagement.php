@@ -3,14 +3,15 @@ require_once "database/models/users.php";
 require_once 'libraries/cleaners.php';
 
 function registerController(){
-    if(isset($_POST['lastname'], $_POST['firstname'], $_POST['username'], $_POST['password'])){
+    if(isset($_POST['lastname'], $_POST['firstname'], $_POST['birthday'], $_POST['username'], $_POST['password'])){
         $lastname = cleanUpInput($_POST['lastname']);
         $firstname = cleanUpInput($_POST['firstname']);
+        $birthday = cleanUpInput($_POST['birthday']);
         $username = cleanUpInput($_POST['username']);
         $password = cleanUpInput($_POST['password']);
 
         try {
-            addUser($firstname, $lastname, $username, $password);
+            addUser($firstname, $lastname, $birthday, $username, $password);
             header("Location: /login"); 
         } catch (PDOException $e){
             echo "Virhe tietokantaan tallennettaessa: " . $e->getMessage();

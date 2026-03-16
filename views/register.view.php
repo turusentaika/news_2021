@@ -8,6 +8,8 @@
     <input id="fname" type="text" name="firstname" maxlength=30>
     <label for="lname">Sukunimi:</label>         
     <input id="lname" type="text" name="lastname" maxlength=30>
+    <label for="bday">Syntymäpäivä</label>
+    <input id="bday" type="date" name="birthday" maxlength=30>
     <label for="uname">Käyttäjänimi:</label>
     <input id="uname" type="text" name="username" maxlength=30>
     <label for="pword">Salasana:</label>

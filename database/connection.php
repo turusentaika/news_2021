@@ -9,7 +9,7 @@ function connectDB(){
 }
 
 function connect() {
-        $host = getenv('DB_HOST', true) ?: "localhost";
+        $host = getenv('DB_HOST', true) ?: "taitur25.treok.io";
         $port = getenv('DB_PORT', true) ?: 3306; 
         $dbname = getenv('DB_NAME', true) ?: "taitur25_mvc"; 
         $user = getenv('DB_USERNAME', true) ?: "taitur25_mvc"; 

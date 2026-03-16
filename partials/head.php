@@ -16,7 +16,7 @@
     }
 </script>
     <header>
-        <h1>Tiinan uutispalvelu</h1>
+        <h1>Tredun uutispalvelu</h1>
     </header>
 <nav>
     <ul class="navbar">
